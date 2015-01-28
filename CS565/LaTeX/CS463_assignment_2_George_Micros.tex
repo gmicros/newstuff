@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+
+\usepackage{fancybox}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{epstopdf}
+\usepackage[margin=1in, vmargin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{movie15}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{enumerate}
+
+
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{20pt}
+
+
+\newcommand{\field}[1]{\mathbb{#1}}
+\def\aa{\}}
+
+
+
+\begin{document}
+
+
+
+
+\begin{titlepage}    
+\begin{flushright}
+\vspace*{.5in}
+
+
+
+\Large{ \sc Micros, George\\ }
+
+
+\vspace*{.5in}
+
+\Large{Assignment \# 2\\}
+
+
+\vspace{1in}
+\Large{\sc CS 463: Cryptography for Cybersecurity\\ Instructor: Ravi Mukkamala, Ph.D \\ Fall 2014 }
+
+
+
+
+\vspace{.5cm}
+
+
+
+
+\vspace {7cm}
+
+
+\end{flushright}
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Question 1}
+
+\subsection{Part a}
+
+\begin{flushleft}
+$(234*145) \mod 10$
+
+$(234 \mod 10)*(145 \mod 10) \mod 10$
+
+$ 4*5 \mod 10 \equiv 0 $
+
+\end{flushleft}
+
+
+\subsection{Part b}
+
+\begin{flushleft}
+$ 7*\frac{4}{11} \mod 10$
+
+$ 7 * \frac{4 + 4*10}{11} \mod 10$
+
+$ 7*4 \mod 10  \equiv  28 \mod 10 \equiv8 $
+
+\end{flushleft}
+
+\subsection{Part c}
+
+\begin{flushleft}
+$ 8^{202} * 7^{103}  \mod 10$
+
+$ (8^{202 \mod 100} \mod 10)*( 7^{103 \mod 48} \mod 10) \mod 10 $
+
+$ (64 \mod 10)*(7^{34 \mod 16} \mod 10) \mod 10 $
+
+$ 4 * ( 7^2 \mod 10 ) \mod 10 \equiv 4*4 \mod 10  \equiv 6 $
+
+
+\end{flushleft}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\sc Question 2}
+
+\subsection{Part a}
+
+\begin{flushleft}
+$ \field{Z}_{12}$ = \{0,1,2,3,4,5,6,7,8,9,10,11\} 
+
+$ \field{Z*}_{12} $= \{1,5,7,11\} 
+\end{flushleft}
+
+\subsection{Part b}
+
+\begin{flushleft}
+$ 7^2 \mod 12 \equiv 1 $
+
+order(7) in $\field{Z*}_{12} = 2$
+
+\end{flushleft}
+
+
+\subsection{Part c}
+
+\begin{flushleft}
+The multiplicative inverse of 5 in $\field{Z*}_{12}$ is itself
+
+$ 5*5 \mod 12 \equiv 1 $
+
+
+
+\end{flushleft}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
+
+

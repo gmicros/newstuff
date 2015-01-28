@@ -1,0 +1,12 @@
+Terms:
+-A risk assessment is performed to determine the most important potential security breaches to address
+	-analyse vulnerabilities
+	-which attacks can be successful
+-A threat assessment is performed to determine the best approaches for securing a system against a particular threat, or class of threats
+	-analyse attacker's resources 
+	-which attacks exist
+
+Interruption: an information asset became unusable/inaccessible/lost
+Interception: unauthorized party gained access to a resource
+Modification: a resource has been modified by an unauthorized party
+Fabrication: counterfeiting of an asset
